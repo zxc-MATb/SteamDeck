@@ -2,7 +2,8 @@
 <rect width="1899" height="920" fill="url(#paint0_linear_34_31)"/>
 <defs>
 <linearGradient id="paint0_linear_34_31" x1="949.5" y1="0" x2="949.5" y2="2191.81" gradientUnits="userSpaceOnUse">
-<stop offset="0.309" stop-color="#272729"/>
+<stop offset="0.344" stop-color="#272729"/>
+<stop offset="0.484" stop-color="#695D48" stop-opacity="0.786586"/>
 <stop offset="1" stop-color="#FFD890" stop-opacity="0.3"/>
 </linearGradient>
 </defs>
