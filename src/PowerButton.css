@@ -1,0 +1,23 @@
+.toggle-button {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-button .toggle-inner {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-button.active .toggle-inner {
+    transform: translateX(25px);
+}

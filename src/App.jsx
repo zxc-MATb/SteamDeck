@@ -1,15 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Button from "./Button.jsx";
+import SquareButton from "./SquareButton.jsx";
+import GameList from "./Menu.jsx";
+import { games } from "./Menu.js";
+import PowerButton from "./PowerButton.jsx";
 
 function App() {
     return (
-        <div className="flex items-center justify-center h-screen">
-            <h1 className="text-3xl font-bold text-blue-500">Hello, Tailwind CSS!</h1>
+        <div>
+            <Button />
+            <SquareButton />
+            <ul>
+                <GameList {...games[0]}
+                    />
+                <GameList {...games[1]}
+                />
+                <GameList {...games[2]}
+                />
+                <GameList {...games[3]}
+                />
+            </ul>
+            {/*<PowerButton />*/}
         </div>
-    );
+    )
 }
 
-export default App;
-
+export default App
