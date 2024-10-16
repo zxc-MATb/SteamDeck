@@ -8,6 +8,8 @@ import buttonX from '../assets/button х.svg'
 import buttonY from '../assets/button y.svg'
 import buttonA from '../assets/button a.svg'
 import buttonB from '../assets/button b.svg'
+import '../component/Screen.jsx'
+
 
 const handleClick = (buttonName) => (event) => {
     const { clientX, clientY } = event;
@@ -42,6 +44,10 @@ const handleClick = (buttonName) => (event) => {
         }
     }
 };
+
+function On_Off (){
+
+}
 
 export function Buttons() {
     return (
@@ -89,7 +95,7 @@ export function Buttons() {
                             onClick={handleClick('ButtonX')}
                         />
                         <img
-                            className='fixed top-[21.7vh] left-[82.6vw] cursor-pointer'
+                            className='fixed top-[21.7vh] left-[82.5vw] cursor-pointer'
                             src={buttonY}
                             alt='ButtonY'
                             onClick={handleClick('ButtonY')}

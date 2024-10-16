@@ -5,6 +5,10 @@ import {Screen} from "./Screen.jsx";
 
 export function Console(on){
 
+    const toggleExpand = () => {
+        setIsExpanded((prev) => !prev);
+    };
+
     on = false
     if(on){
         consol.log("Экран")
