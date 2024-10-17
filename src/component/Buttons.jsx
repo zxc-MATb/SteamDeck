@@ -1,4 +1,5 @@
 import React from 'react';
+import {useConsole} from "./ConsoleContext.jsx";
 import crosspiece from '../assets/button crosspiece.svg';
 import view from '../assets/button view.svg';
 import steam from '../assets/button steam.svg';
@@ -45,11 +46,10 @@ const handleClick = (buttonName) => (event) => {
     }
 };
 
-function On_Off (){
-
-}
-
 export function Buttons() {
+
+    const { isConsoleOn, toggleConsole } = useConsole();
+
     return (
         <>
             <div className='ml-[220px] mt-[161px] flex w-[1470px] h-[600px]'>
@@ -73,6 +73,7 @@ export function Buttons() {
                         onClick={handleClick('Steam')}
                     />
                 </div>
+                <p className='fixed text-gray-50 font-kantumruy text-3xl ml-[1125px] mt-[-25px]' onClick={toggleConsole}>{isConsoleOn ? 'On' : 'Off'}</p>
                 <div>
                     <img
                         className='fixed top-[61.2vh] left-[72.9vw] cursor-pointer'

@@ -1,5 +1,5 @@
-class Game {
-    constructor(id, title, genre, developer, publisher, releaseDate, spentHours) {
+export class Game {
+    constructor(id, title, genre, developer, publisher, releaseDate, spentHours,image) {
         this.id = id;
         this.title = title;
         this.genre = genre;
@@ -8,5 +8,6 @@ class Game {
         this.releaseDate = releaseDate;
         this.spentHours = spentHours;
         this.achievements = [];
+        this.image = image;
     }
 }

@@ -8,7 +8,13 @@ export class User {
         this.friends = [];
         this.gameLibrary = [];
     }
-
+    addGame(game) {
+        if (game instanceof Game) {
+            this.gameLibrary.push(game);
+        } else {
+            console.error("Trying to add a non-Game object to the gameLibrary.");
+        }
+    }
     get balance() {
         return this._balance;
     }
