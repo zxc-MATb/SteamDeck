@@ -1,4 +1,4 @@
-class Friends {
+export class Friends {
     constructor() {
         this.friendsList = [];
     }

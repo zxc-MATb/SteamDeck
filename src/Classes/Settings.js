@@ -1,4 +1,4 @@
-class Settings {
+export class Settings {
     constructor(brightness, volume, language) {
         this.brightness = brightness;
         this.volume = volume;
